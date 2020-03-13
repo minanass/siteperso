@@ -1,45 +1,48 @@
 html {
   font-size: 16px;
-
+  font-family: Arial, sans-serif;
 }
 
 body {
   header {
-    background: #f7912c;
-    height: 20vh;
+    background: $headerbackground;
+    height: 15vh;
+    display: flex;
+    flex-direction: column-reverse;
     #menu {
-      padding: 10px;
+      padding: 0px;
       margin: 0px;
       text-align: center;
+      display: flex;
+      justify-content: center;
     }
-    p {
-      float: right;
-      border: 1px solid #000000;
+     p{
+      border: 1px solid $pborder;
       width: 150px;
+      background: $pbackground;
     }
-    #menu li a {
+    #menu p a {
       display: inline;
-      background: #43a2a6;
-      color: #ffffff;
+      color: $menupacolor;
       text-align: center;
-      border-left: 1px solid #000000;
     }
-    #menu li a:hover {
-      background: #ffffff;
-      color: #ffffff;
+   #menu p a:hover {
+      background: $menupabackground;
+      color: $menupacolor;
     }
   }
+
   main {
-      background-color: #86a0c9;
+      background-color: $mainbackgroundcolor;
       position: relative;
-      height: 60vh;
+      height: 75vh;
     h1,
     h2 {
         font-size: 30px; 
        
       p {
           text-align:justify;
-          color: black;
+          color: $pcolor;
           padding: 50px;
           margin: 50px;
          
@@ -48,7 +51,17 @@ body {
   }
   footer {
     position: relative;
-    background: #8a5ed6;
-    height: 20vh;
+    //background: #8a5ed6;
+    background: $footerbackground;
+    height: 10vh;
+    display: flex;
+    flex-direction: row-reverse;
+    
+    img{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        
+    }
   }
 }
