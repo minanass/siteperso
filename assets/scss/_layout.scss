@@ -5,7 +5,7 @@ html {
 
 body {
   header {
-    background: $headerbackground;
+    background-color: $headerbackground;
     height: 15vh;
     display: flex;
     flex-direction: column-reverse;
@@ -19,16 +19,18 @@ body {
      p{
       border: 1px solid $pborder;
       width: 150px;
-      background: $pbackground;
+      background-color: $pbackground;
     }
     #menu p a {
       display: inline;
       color: $menupacolor;
       text-align: center;
+      text-decoration:none;
     }
    #menu p a:hover {
       background: $menupabackground;
       color: $menupacolor;
+      
     }
   }
 
