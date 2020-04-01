@@ -38,32 +38,38 @@ body {
       background-color: $mainbackgroundcolor;
       position: relative;
       height: 75vh;
+      text-align:center;
+      
     h1,
     h2 {
         font-size: 30px; 
-       
-      p {
-          text-align:justify;
+         }
+    
+      ul {
           color: $pcolor;
-          padding: 50px;
-          margin: 50px;
-         
-        }
-    }
+          padding:0px;
+          margin: 0px;
+          
+         }
   }
   footer {
     position: relative;
     //background: #8a5ed6;
-    background: $footerbackground;
+    background-color: $footerbackground;
     height: 10vh;
     display: flex;
     flex-direction: row-reverse;
+  
     
     img{
         width: 40px;
         height: 40px;
         margin: 10px;
         
+    } 
+     p{
+      text-decoration-style: initial;
+      color:#ffffff;
     }
   }
 }
